@@ -2,14 +2,22 @@ package inheritance;
 
 class Parent{
 
- public Parent(){
-        System.out.println("Parent Constructor");
+    public Parent(){
+        System.out.println("non param parent");
+    }
+    public Parent(int x){
+        System.out.println("param parent");
     }
 }
+
 class Child extends Parent{
     public Child(){
-        System.out.println("Child Constructor");
+        System.out.println("non param Child");
     }
+    public Child(int y){
+        System.out.println("param child");
+    }
+
 }
 class GrandChild extends Child{
     public GrandChild(){
