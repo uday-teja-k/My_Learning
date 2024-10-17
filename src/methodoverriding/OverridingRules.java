@@ -1,13 +1,15 @@
 package methodoverriding;
 
+class V{}
+class D extends V{}
+
 class Sup{
-    public void display(){
-        System.out.println("Sup display");
-    }
+      protected void display(){   //allowed to make the method private
+          System.out.println("Sup display");}
 }
-class chil extends Sub{
+class Chil extends Sup{
     @Override
-    public void display(){
+    protected void display(){//protected, public, private  is also allowed
         System.out.println("chil display");
     }
 }
@@ -17,6 +19,9 @@ class chil extends Sub{
 
 public class OverridingRules {
     public static void main(String[] args) {
+        Chil chil = new Chil();
+        chil.display();
+
 
     }
 }
