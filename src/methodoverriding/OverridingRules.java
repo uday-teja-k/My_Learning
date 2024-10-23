@@ -17,11 +17,14 @@ class Chil extends Sup{
 //in both methods signature must be exactly same
 //if anything is different then it is not overriding, it will be a different method
 
-public class OverridingRules {
+public abstract class OverridingRules {
     public static void main(String[] args) {
         Chil chil = new Chil();
         chil.display();
 
 
     }
+}
+class veebf{
+    OverridingRules rules; // this is taking the reference of the abstract class - this is allowed for abstract class
 }
