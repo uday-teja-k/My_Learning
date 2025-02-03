@@ -24,18 +24,5 @@ public class ArmstrongNumber {
         }else{
             System.out.println("not arm");
         }
-
-
-        
-       
-
-
-
-
-       
-
-
-
-
     }
 }
